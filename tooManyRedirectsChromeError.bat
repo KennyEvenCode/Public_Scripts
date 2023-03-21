@@ -46,3 +46,5 @@ echo "Regsitering DNS..."
 ipconfig /registerdns
 echo "Releasing your IP address..."
 ipconfig /release
+echo "Renew your IP address..."
+ipconfig /renew
