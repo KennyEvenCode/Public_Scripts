@@ -36,3 +36,9 @@ tzutil /s "Dateline Standard Time"
 tzutil /s "Pacific Standard Time"
 echo "System set to Pacific Standard Time (UTC-08:00)"
 echo ""
+
+
+:: Flush the DNS (Domain Name System) 
+echo ""
+echo "Flushing DNS..."
+ipconfig /flushdns
