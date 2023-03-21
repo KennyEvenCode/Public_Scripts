@@ -19,3 +19,8 @@ echo "  - Run a Full System Scan and Offline System Scan via Windows Security Co
 echo ""
 echo "Upon completeing these tasks..."
 pause
+
+
+:: Create a Restore Point 
+echo "Creating a Restore Point..."
+wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Restore Point: Before executing tooManyRedirects.bat", 100, 7
