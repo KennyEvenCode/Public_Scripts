@@ -48,3 +48,5 @@ echo "Releasing your IP address..."
 ipconfig /release
 echo "Renew your IP address..."
 ipconfig /renew
+echo "Resetting Winsock Catalog..."
+netsh winsock reset
