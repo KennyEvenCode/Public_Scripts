@@ -44,3 +44,5 @@ echo "Flushing DNS..."
 ipconfig /flushdns
 echo "Regsitering DNS..."
 ipconfig /registerdns
+echo "Releasing your IP address..."
+ipconfig /release
