@@ -42,3 +42,5 @@ echo ""
 echo ""
 echo "Flushing DNS..."
 ipconfig /flushdns
+echo "Regsitering DNS..."
+ipconfig /registerdns
