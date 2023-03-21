@@ -24,3 +24,15 @@ pause
 :: Create a Restore Point 
 echo "Creating a Restore Point..."
 wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Restore Point: Before executing tooManyRedirects.bat", 100, 7
+
+
+:: Check & Correct Date & Time Settings 
+echo ""
+echo "Setting Timezone to Pacific Standard Time"
+echo ""
+echo "Current TimeZone Setting:"
+tzutil /g
+tzutil /s "Dateline Standard Time"
+tzutil /s "Pacific Standard Time"
+echo "System set to Pacific Standard Time (UTC-08:00)"
+echo ""
